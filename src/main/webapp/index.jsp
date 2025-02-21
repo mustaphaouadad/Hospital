@@ -1,11 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediCare - Accueil</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<%@ include file="componenet/AllCss.jsp" %>
 </head>
-<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+<body >
+
+<%@ include file="componenet/navbar.jsp" %>
+<section class="d-flex justify-content-center align-items-center vh-100 bg-light">
 
     <div class="container text-center">
         <h1 class="mb-4">Bienvenue sur MediCare</h1>
@@ -17,26 +23,27 @@
                 <div class="card shadow-lg border-0">
                     <div class="card-body">
                         <h3 class="card-title">Espace Patient</h3>
-                        <p class="card-text">Prenez et gérez vos rendez-vous en toute simplicité.</p>
-                        <a href="Patient/formulaire.jsp" class="btn btn-primary">Accéder</a>
+                        <p class="card-text">Prenez et gÃ©rez vos rendez-vous en toute simplicitÃ©.</p>
+                        <a href="formulaire.jsp" class="btn btn-primary">AccÃ©der</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Espace Médecin -->
+            <!-- Espace MÃ©decin -->
            <div class="col-md-4">
                 <div class="card shadow-lg border-0">
                     <div class="card-body">
                         <h3 class="card-title">Espace Medcin</h3>
-                        <p class="card-text">Consulter et gérez votre agenda en toute simplicité.</p>
-                        <a href="Doctor/doctor.jsp" class="btn btn-success">Accéder</a>
+                        <p class="card-text">Consulter et gÃ©rez votre agenda en toute simplicitÃ©.</p>
+                        <a href="View/Doctor/doctor.jsp" class="btn btn-success">AccÃ©der</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </section>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
 </body>
 </html>

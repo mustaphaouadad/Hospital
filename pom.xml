@@ -59,6 +59,11 @@
       <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    	<groupId>D.RV</groupId>
+    	<artifactId>DoctorRV1</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
   <build>

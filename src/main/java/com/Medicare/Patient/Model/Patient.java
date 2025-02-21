@@ -7,7 +7,11 @@ public class Patient {
 	String phoneNumber;
 
 
+ 
 
+public Patient() {
+		
+	}
 
 public Patient (int idPatient , String userName , String email ,String phoneNumber) {
 	this.idPatient =idPatient; 
