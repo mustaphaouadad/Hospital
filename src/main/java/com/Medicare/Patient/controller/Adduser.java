@@ -1,6 +1,7 @@
 package com.Medicare.Patient.controller;
 
 import java.io.IOException;
+
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
@@ -30,7 +31,7 @@ public class Adduser extends HttpServlet {
 		
 		int result =DataBaseConnection.SavePatient(p);
 		if (result>0) {
-			response.sendRedirect("desplayUser");
+			response.sendRedirect("http://localhost:8081/MediCare/patient.jsp");
 		} else {
 			PrintWriter out = response.getWriter();
 			out.println("Data not add ");

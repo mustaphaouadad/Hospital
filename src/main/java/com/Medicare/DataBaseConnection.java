@@ -47,7 +47,7 @@ public static List<Patient> getAllPatient(){
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital2","root","0000");
 		Statement smt =  con.createStatement();
-		ResultSet rs=  smt.executeQuery("SELECT * from hospital2.MediCare ");
+		ResultSet rs=  smt.executeQuery("SELECT * from hospital2.patient");
 		while (rs.next()) {
 			Patient patient = new Patient();
 			patient.setIdPatient(rs.getInt("idPatient"));

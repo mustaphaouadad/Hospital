@@ -44,7 +44,7 @@
 
                             <!-- Bouton Soumettre -->
                             <div class="d-grid">
-                                <a type="submit" href="patient.jsp" class="btn btn-primary">Enregistrer</a>
+                                <button type="submit"  class="btn btn-primary">Enregistrer</button>
                             </div>
                         </form>
                     </div>
